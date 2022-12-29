@@ -1,0 +1,70 @@
+<template>
+  <div class="header">
+    <div class="logo">MIE-KEN</div>
+    <div class="menu">
+      <NuxtLink class="link" to="/">
+        <div class="title">Home</div>
+        <div class="bar"></div>
+      </NuxtLink>
+      <NuxtLink class="link" to="/dest">
+        <div class="title">Destinations</div>
+        <div class="bar"></div>
+      </NuxtLink>
+      <NuxtLink class="link" to="/about">
+        <div class="title">About</div>
+        <div class="bar"></div>
+      </NuxtLink>
+    </div>
+  </div>
+</template>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+
+html,
+body {
+  font-family: "Dosis";
+  font-weight: 300;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: right;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 26px;
+  border-right: 1px solid black;
+}
+
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+  color: black;
+}
+
+.bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+</style>
