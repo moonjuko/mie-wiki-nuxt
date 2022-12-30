@@ -63,13 +63,13 @@ header {
 .welcome-text {
   width: 100%;
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .welcome-text h1 {
-  text-align: left;
+  text-align: center;
   color: black;
   text-transform: uppercase;
   font-size: 90px;
@@ -77,7 +77,7 @@ header {
 }
 
 .welcome-text h3 {
-  text-align: left;
+  text-align: center;
   color: black;
   text-transform: uppercase;
   font-size: 40px;
