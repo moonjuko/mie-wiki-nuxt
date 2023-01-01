@@ -33,6 +33,8 @@ body {
   border-bottom: 1px solid black;
   text-align: right;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo {
@@ -55,6 +57,15 @@ body {
   font-weight: 800;
   font-size: 24px;
   color: black;
+  flex: auto;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: rgb(109, 108, 108);
+  color: white;
+  padding: 5px;
+  transition: all 0.3s ease-in;
 }
 
 .bar {
@@ -66,5 +77,22 @@ body {
   left: 0;
   opacity: 0;
   transition: all 300ms;
+}
+
+/* Responsive Nav Bar */
+@media all and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .link {
+    text-align: center;
+    font-size: 12px;
+    margin: 20px;
+  }
+  .logo {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 20px 32px 20px;
+  }
 }
 </style>

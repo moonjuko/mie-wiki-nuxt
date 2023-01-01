@@ -124,6 +124,10 @@ header {
   }
 
   .welcome-text h1 {
+    font-size: 40px;
+  }
+
+  .welcome-text h3 {
     font-size: 30px;
   }
 }
