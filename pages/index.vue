@@ -1,6 +1,7 @@
 <script></script>
 
 <template>
+  <div class="bg"></div>
   <div class="welcome-text">
     <h3>JAPAN</h3>
     <h1>Mie-Ken</h1>
@@ -19,45 +20,17 @@
 body {
   font-family: "Dosis";
 }
-.wrapper {
-  width: 1170px;
-  margin: auto;
+
+p {
+  color: rgb(0, 0, 0);
 }
-header {
-  background: url(1.jpg);
+
+.bg {
+  background: url(~/assets/img/homeBGG.webp);
   height: 100vh;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  position: relative;
-}
-.nav-area {
-  float: right;
-  list-style: none;
-  margin-top: 30px;
-}
-.nav-area li {
-  display: inline-block;
-}
-.nav-area li a {
-  color: black;
-  text-decoration: none;
-  padding: 5px 20px;
-  font-family: "Dosis";
-  font-size: 16px;
-  text-transform: uppercase;
-  border-radius: 50px;
-}
-.nav-area li a:hover {
-  background: black;
-  color: #fff;
-}
-.logo {
-  float: left;
-}
-.logo img {
-  width: 100%;
-  padding: 15px 0;
 }
 
 .welcome-text {
@@ -70,7 +43,7 @@ header {
 }
 .welcome-text h1 {
   text-align: center;
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 90px;
   font-family: "Dosis";
@@ -78,25 +51,25 @@ header {
 
 .welcome-text h3 {
   text-align: center;
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 40px;
   font-family: "Dosis";
 }
 .welcome-text a {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   padding: 10px 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 20px;
   display: inline-block;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 900;
 }
 .welcome-text a:hover {
-  background: #565656;
-  color: #fff;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 /*resposive*/
