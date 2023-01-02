@@ -62,10 +62,11 @@ body {
 }
 
 .link:hover {
-  background-color: rgb(109, 108, 108);
+  background-color: rgb(147, 147, 147);
   color: white;
   padding: 5px;
   transition: all 0.3s ease-in;
+  border-radius: 1%;
 }
 
 .bar {

@@ -5,13 +5,16 @@
   <div class="welcome-text">
     <h3>JAPAN</h3>
     <h1>Mie-Ken</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p class="homeDesc">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
     <a href="#">Discover</a>
   </div>
 </template>
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
 
 * {
   margin: 0;
@@ -21,12 +24,15 @@ body {
   font-family: "Dosis";
 }
 
-p {
-  color: rgb(0, 0, 0);
+.homeDesc {
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 3px 0 10px;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 .bg {
-  background: url(~/assets/img/homeBGG.webp);
+  background: url(~/assets/img/home.webp);
   height: 100vh;
   -webkit-background-size: cover;
   background-size: cover;
@@ -43,33 +49,36 @@ p {
 }
 .welcome-text h1 {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  font-size: 90px;
+  font-size: 120px;
   font-family: "Dosis";
+  font-weight: 900;
+  text-shadow: rgb(69, 1, 1) 3px 0 10px;
 }
 
 .welcome-text h3 {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Dosis";
+  text-shadow: rgb(0, 42, 41) 1px 0 10px;
 }
 .welcome-text a {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px 25px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 24px;
   margin-top: 20px;
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 900;
 }
 .welcome-text a:hover {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+  background: #000000;
+  color: rgb(255, 255, 255);
 }
 
 /*resposive*/
