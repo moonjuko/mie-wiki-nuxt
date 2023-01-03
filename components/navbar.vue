@@ -43,7 +43,7 @@ body {
   left: 0;
   font-size: 32px;
   font-weight: 300;
-  padding: 26px;
+  padding: 25px;
   border-right: 1px solid black;
 }
 
@@ -54,7 +54,7 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 24px;
   color: black;
   flex: auto;
