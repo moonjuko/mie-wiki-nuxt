@@ -8,7 +8,7 @@
     <p class="homeDesc">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </p>
-    <a href="#">Discover</a>
+    <a class="homeBtn" href="#">Discover</a>
   </div>
 </template>
 
@@ -37,6 +37,11 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
+  opacity: 0.95;
+}
+
+.bg:hover {
+  opacity: 1;
 }
 
 .welcome-text {
@@ -66,7 +71,7 @@ body {
   text-shadow: rgb(0, 42, 41) 1px 0 10px;
 }
 .welcome-text a {
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   padding: 10px 25px;
   text-decoration: none;
   text-transform: uppercase;
@@ -77,8 +82,8 @@ body {
   font-weight: 900;
 }
 .welcome-text a:hover {
-  background: #000000;
-  color: rgb(255, 255, 255);
+  background: #e6ecfe;
+  color: black;
 }
 
 /*resposive*/
