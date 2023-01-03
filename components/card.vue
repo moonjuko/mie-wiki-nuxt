@@ -95,7 +95,7 @@
               the four seasons. The seasonal events which can be enjoyed from
               spring to winter are popular.
             </p>
-            <button class="button">Explore</button>
+            <button class="button" href="">Explore</button>
           </div>
         </div>
       </section>
