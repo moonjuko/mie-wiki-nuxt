@@ -6,14 +6,11 @@
         <p class="destText">
           First-time visitors to Japan undoubtedly have to go to Tokyo and
           Kyoto, but if you’re looking for somewhere a little quieter with fewer
-          tourists, there are so many great options on the island nation. Part
-          of the Kansai region, the area has some of the most historical and
-          sacred sites in Japan, providing an opportunity to really immerse in
-          the culture and learn about what the locals value. For those who are
-          seeking out delectable fare, Mie boasts exceptional seafood thanks to
-          its ocean-side location and is also home to one of the three best
-          types of Japanese beef. And then there’s its natural beauty, with
-          dense ancient forests that meet cascading waterfalls.
+          tourists, there are so many great options on the island nation. For
+          those who are seeking out delectable fare, Mie boasts exceptional
+          seafood thanks to its ocean-side location and is also home to one of
+          the three best types of Japanese beef. And then there’s its natural
+          beauty, with dense ancient forests that meet cascading waterfalls.
         </p>
         <h3 class="bestDest">The Best Places to Visit</h3>
       </div>
@@ -98,7 +95,7 @@
               the four seasons. The seasonal events which can be enjoyed from
               spring to winter are popular.
             </p>
-            <a class="button" href="#">Explore</a>
+            <button class="button">Explore</button>
           </div>
         </div>
       </section>
@@ -112,7 +109,8 @@
 /* Style the card container */
 
 .centered {
-  margin: 60px;
+  margin: 30px 0 0px 0;
+  padding: 5px 50px;
 }
 
 .site-branding {
@@ -125,15 +123,16 @@
 }
 
 .bestDest {
-  padding-top: 40px;
-  margin-bottom: -60px;
-  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: -50px;
 }
 .destText {
   max-width: 1000px;
   color: #555;
 }
-
+.cards {
+  margin: 0 20px 0 20px;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -189,7 +188,7 @@
   padding: 10px 25px;
   text-decoration: none;
   font-size: 15px;
-  margin: 20px 0 30px 0;
+  margin: 10px 0 20px 0;
   display: inline-block;
   color: rgb(0, 0, 0);
   font-weight: 900;
@@ -230,6 +229,15 @@
   .card {
     flex: 0 1 calc(25% - 1em);
     margin-top: 30px;
+  }
+}
+@media all and (max-width: 600px) {
+  .site-title {
+    font-size: 30px;
+  }
+  .bestDest {
+    margin-top: 40px;
+    margin-bottom: 0px;
   }
 }
 </style>

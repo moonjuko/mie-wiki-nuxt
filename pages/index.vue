@@ -1,14 +1,16 @@
 <script></script>
 
 <template>
-  <div class="bg"></div>
-  <div class="welcome-text">
-    <h3>JAPAN</h3>
-    <h1>Mie-Ken</h1>
-    <p class="homeDesc">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    </p>
-    <a class="homeBtn" href="#">Discover</a>
+  <div class="wrapper">
+    <div class="bg"></div>
+    <div class="welcome-text">
+      <h3>三重県</h3>
+      <h1>Mie-Ken</h1>
+      <p class="homeDesc">
+        Immerse in the japanese culture and learn about what the locals values.
+      </p>
+      <a class="homeBtn" href="/dest">Discover</a>
+    </div>
   </div>
 </template>
 
@@ -26,29 +28,27 @@ body {
 
 .homeDesc {
   color: rgb(255, 255, 255);
-  text-shadow: rgb(0, 0, 0) 3px 0 10px;
+  text-shadow: rgb(0, 0, 0) 5px;
   font-weight: 300;
   font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .bg {
   background: url(~/assets/img/home.webp);
-  height: 100vh;
+  height: 730px;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  opacity: 0.95;
-}
-
-.bg:hover {
-  opacity: 1;
 }
 
 .welcome-text {
   width: 100%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,19 +67,21 @@ body {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 50px;
+  font-weight: 100;
   font-family: "Dosis";
-  text-shadow: rgb(0, 42, 41) 1px 0 10px;
+  text-shadow: rgb(0, 0, 0) 5px 0 10px;
 }
 .welcome-text a {
-  border: 3px solid rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
   padding: 10px 25px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 24px;
   margin-top: 20px;
   display: inline-block;
-  color: rgb(255, 255, 255);
-  font-weight: 900;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  background-color: white;
 }
 .welcome-text a:hover {
   background: #e6ecfe;
