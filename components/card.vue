@@ -11,6 +11,11 @@
           seafood thanks to its ocean-side location and is also home to one of
           the three best types of Japanese beef. And then there’s its natural
           beauty, with dense ancient forests that meet cascading waterfalls.
+          tourists, there are so many great options on the island nation. For
+          those who are seeking out delectable fare, Mie boasts exceptional
+          seafood thanks to its ocean-side location and is also home to one of
+          the three best types of Japanese beef. And then there’s its natural
+          beauty, with dense ancient forests that meet cascading waterfalls.
         </p>
         <h3 class="bestDest">The Best Places to Visit</h3>
       </div>
@@ -95,7 +100,7 @@
               the four seasons. The seasonal events which can be enjoyed from
               spring to winter are popular.
             </p>
-            <button class="button" href="">Explore</button>
+            <button class="button">Explore</button>
           </div>
         </div>
       </section>
