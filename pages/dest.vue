@@ -8,18 +8,10 @@ import cards from "../assets/cards.json";
       <div class="site-branding">
         <h1 class="site-title">Everything About The Mie-Ken in Your Pocket</h1>
         <p class="destText">
-          First-time visitors to Japan undoubtedly have to go to Tokyo and
-          Kyoto, but if you’re looking for somewhere a little quieter with fewer
-          tourists, there are so many great options on the island nation. For
-          those who are seeking out delectable fare, Mie boasts exceptional
-          seafood thanks to its ocean-side location and is also home to one of
-          the three best types of Japanese beef. And then there’s its natural
-          beauty, with dense ancient forests that meet cascading waterfalls.
-          tourists, there are so many great options on the island nation. For
-          those who are seeking out delectable fare, Mie boasts exceptional
-          seafood thanks to its ocean-side location and is also home to one of
-          the three best types of Japanese beef. And then there’s its natural
-          beauty, with dense ancient forests that meet cascading waterfalls.
+          Mie boasts exceptional seafood thanks to its ocean-side location and
+          is also home to one of the three best types of Japanese beef.
+          <br />And then there’s its natural beauty, with dense ancient forests
+          that meet cascading waterfalls.
         </p>
         <h3 class="bestDest">The Best Places to Visit</h3>
       </div>

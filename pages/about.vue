@@ -24,13 +24,12 @@
 
 .aboutTitle {
   margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #555;
+  font-weight: 100;
+  font-size: 24px;
 }
 
 .aboutText {
-  font-family: "Playfair Display", serif;
+  font-style: italic;
   padding-bottom: 30px;
 }
 

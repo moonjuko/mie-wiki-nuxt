@@ -22,7 +22,7 @@ export default {
 /* Style the card container */
 
 .centered {
-  margin: 30px 0 0px 0;
+  margin: 20px 0 0px 0;
   padding: 5px 50px;
 }
 
@@ -36,12 +36,14 @@ export default {
 }
 
 .bestDest {
-  margin-top: 40px;
-  margin-bottom: -50px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+  font-size: 20px;
 }
 .destText {
   max-width: 1000px;
   color: #555;
+  font-size: 20px;
 }
 .cards {
   margin: 0 20px 0 20px;
@@ -81,7 +83,7 @@ export default {
 /* Style the card title */
 .cardTitle {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
   padding: 6px;
   text-align: left;
 }
@@ -89,7 +91,7 @@ export default {
 /* Style the card description */
 .description {
   color: black;
-  font-size: 14px;
+  font-size: 18px;
   padding: 6px;
   margin-bottom: 15px;
   text-align: left;
