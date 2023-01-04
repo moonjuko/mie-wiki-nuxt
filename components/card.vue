@@ -12,7 +12,7 @@ export default {
     <div class="content">
       <h3 class="cardTitle">{{ name }}</h3>
       <p class="description">{{ description }}</p>
-      <button class="button">Explore</button>
+      <a :href="'/destinations/' + id" class="button">Explore</a>
     </div>
   </div>
 </template>
