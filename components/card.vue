@@ -7,8 +7,7 @@ export default {
 <template>
   <div class="card">
     <div class="image">
-      <!-- You can add an image here using the <img> element -->
-      {{ img }}
+      <img :src="'/_nuxt/assets/img/' + img" />
     </div>
     <div class="content">
       <h3 class="cardTitle">{{ name }}</h3>
