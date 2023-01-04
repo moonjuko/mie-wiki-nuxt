@@ -1,8 +1,37 @@
 [
   {
-    "id": "1",
+    "id": "0",
+    "img": "~/assets/img/kumano.webp",
     "name": "Komono Kodo",
-    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "longDesc": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+    "description": "For over 1000 years people from all levels of society have made the pilgrimage to Kumano. Its a fantastic way to experience thecultural landscape of Kumano’s spiritual countryside",
+    "longDescription": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+  },
+  {
+    "id": "1",
+    "img": "~/assets/img/akame.jpeg",
+    "name": "Akame 48 Waterfalls",
+    "description": "The Akame 48 Waterfalls offer a unique mix of ninja excitement, mysterious trails, the waterfalls themselves and enormous amphibians. A recreational path of about 4 km long.",
+    "longDescription": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+  },
+  {
+    "id": "2",
+    "img": "~/assets/img/meoto-iwa.jpeg",
+    "name": "Meoto Iwa",
+    "description": "Meoto Iwa are two sacred rocks representing a husband and a wife. Both rocks are connected by a shimenawa rope which acts as the division between the spiritual and earthly realms.",
+    "longDescription": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+  },
+  {
+    "id": "3",
+    "img": "~/assets/img/amanemu-spa.webp",
+    "name": "Amanemu",
+    "description": "A paradisiacal retreat nestled within Ise-Shima National Park overlooking Ago Bay, Amanemu is the place to stay if you’re looking to take a break from the hustle and bustle of city life.",
+    "longDescription": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+  },
+  {
+    "id": "4",
+    "img": "~/assets/img/nabana.jpeg",
+    "name": "Nabana no Sato",
+    "description": "At Nabana no Sato, you can see various flowers and trees through the four seasons. The seasonal events which can be enjoyed from spring to winter are popular.",
+    "longDescription": " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
   }
 ]

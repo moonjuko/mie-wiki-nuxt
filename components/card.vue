@@ -1,113 +1,21 @@
-<template>
-  <header class="masthead clear">
-    <div class="centered">
-      <div class="site-branding">
-        <h1 class="site-title">Everything About The Mie-Ken in Your Pocket</h1>
-        <p class="destText">
-          First-time visitors to Japan undoubtedly have to go to Tokyo and
-          Kyoto, but if you’re looking for somewhere a little quieter with fewer
-          tourists, there are so many great options on the island nation. For
-          those who are seeking out delectable fare, Mie boasts exceptional
-          seafood thanks to its ocean-side location and is also home to one of
-          the three best types of Japanese beef. And then there’s its natural
-          beauty, with dense ancient forests that meet cascading waterfalls.
-          tourists, there are so many great options on the island nation. For
-          those who are seeking out delectable fare, Mie boasts exceptional
-          seafood thanks to its ocean-side location and is also home to one of
-          the three best types of Japanese beef. And then there’s its natural
-          beauty, with dense ancient forests that meet cascading waterfalls.
-        </p>
-        <h3 class="bestDest">The Best Places to Visit</h3>
-      </div>
-      <!-- .site-title -->
-    </div>
-    <!-- .centered -->
-  </header>
-  <!-- .masthead -->
+<script>
+export default {
+  props: ["id", "img", "name", "description"],
+};
+</script>
 
-  <main class="main-area">
-    <div class="centered">
-      <section class="cards">
-        <div class="card">
-          <div class="image">
-            <!-- You can add an image here using the <img> element -->
-            <img src="~/assets/img/kumano.webp" alt="Card Image" />
-          </div>
-          <div class="content">
-            <h3 class="cardTitle">Kumano Kodo</h3>
-            <p class="description">
-              For over 1000 years, people from all levels of society, have made
-              the pilgrimage to Kumano. It's a fantastic way to experience the
-              cultural landscape of Kumano’s spiritual countryside.
-            </p>
-            <button class="button">Explore</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <!-- You can add an image here using the <img> element -->
-            <img src="~/assets/img/akame.jpeg" alt="Card Image" />
-          </div>
-          <div class="content">
-            <h3 class="cardTitle">Akame 48 Waterfalls</h3>
-            <p class="description">
-              The Akame 48 Waterfalls offer a unique mix of ninja excitement,
-              mysterious trails, the waterfalls themselves and enormous
-              amphibians. A recreational path of about 4 km long.
-            </p>
-            <button class="button">Explore</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <!-- You can add an image here using the <img> element -->
-            <img src="~/assets/img/meoto-iwa.jpeg" alt="Card Image" />
-          </div>
-          <div class="content">
-            <h3 class="cardTitle">Meoto Iwa</h3>
-            <p class="description">
-              Meoto Iwa are two sacred rocks representing a husband and a wife.
-              Both rocks are connected by a shimenawa rope which acts as the
-              division between the spiritual and earthly realms.
-            </p>
-            <button class="button">Explore</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <!-- You can add an image here using the <img> element -->
-            <img src="~/assets/img/amanemu-spa.webp" alt="Card Image" />
-          </div>
-          <div class="content">
-            <h3 class="cardTitle">Amanemu</h3>
-            <p class="description">
-              A paradisiacal retreat nestled within Ise-Shima National Park
-              overlooking Ago Bay, Amanemu is the place to stay if you’re
-              looking to take a break from the hustle and bustle of city life.
-            </p>
-            <button class="button">Explore</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <!-- You can add an image here using the <img> element -->
-            <img src="~/assets/img/nabana.jpeg" alt="Card Image" />
-          </div>
-          <div class="content">
-            <h3 class="cardTitle">Nabana no Sato</h3>
-            <p class="description">
-              At "Nabana-no-Sato", you can see various flowers and trees through
-              the four seasons. The seasonal events which can be enjoyed from
-              spring to winter are popular.
-            </p>
-            <button class="button">Explore</button>
-          </div>
-        </div>
-      </section>
-      <!-- .cards -->
+<template>
+  <div class="card">
+    <div class="image">
+      <!-- You can add an image here using the <img> element -->
+      {{ img }}
     </div>
-    <!-- .centered -->
-  </main>
+    <div class="content">
+      <h3 class="cardTitle">{{ name }}</h3>
+      <p class="description">{{ description }}</p>
+      <button class="button">Explore</button>
+    </div>
+  </div>
 </template>
 
 <style>
