@@ -13,7 +13,9 @@ function getCardById(idToFind) {
   return card;
 }
 
-// get object by id from json
+function formatText() {
+  return detailCard.longDescription.replace(/\n/g, "<br />");
+}
 </script>
 
 <template>
@@ -23,9 +25,8 @@ function getCardById(idToFind) {
         <div class="column">
           <div class="blue-column">
             <h1 class="detailTitle">{{ detailCard.name }}</h1>
-            <p class="detailText">
-              {{ detailCard.longDescription }}
-            </p>
+            <p class="detailText" v-html="formatText()"></p>
+            <!-- <p class="detailText">{{ detailCard.longDescription }}</p> -->
           </div>
         </div>
         <div class="column">

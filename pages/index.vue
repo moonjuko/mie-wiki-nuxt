@@ -38,7 +38,7 @@ body {
 
 .bg {
   background: url(~/assets/img/home.webp);
-  height: 730px;
+  height: 100vh;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
