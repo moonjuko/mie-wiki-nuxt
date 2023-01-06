@@ -98,15 +98,9 @@ function formatText() {
   margin-right: 60px;
 }
 
-.green-column {
-}
-
 @media screen and (min-width: 800px) {
   .column {
     flex: 1;
-  }
-  .detailText {
-    padding: 0;
   }
 }
 
@@ -160,5 +154,44 @@ function formatText() {
 
 .buttons a:hover {
   background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .detailTitle {
+    margin-top: 20px;
+  }
+  .detailText {
+    font-size: 18px;
+  }
+  .some-page-wrapper {
+    margin: 10px 50px;
+  }
+  .blue-column {
+    margin-right: 0px;
+  }
+  .green-column {
+    margin-bottom: 0px;
+  }
+  .slider {
+    width: 300px;
+    height: 300px;
+  }
+  .slide {
+    width: 300px;
+    height: 200px;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -300px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -600px;
+  }
+  .image-container {
+    width: 900px;
+    height: 200px;
+  }
 }
 </style>

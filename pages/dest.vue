@@ -6,7 +6,7 @@ import cards from "../assets/cards.json";
   <header class="masthead clear">
     <div class="centered">
       <div class="site-branding">
-        <h1 class="site-title">Everything About The Mie-Ken in Your Pocket</h1>
+        <h1 class="site-title">Everything About Mie-Ken in Your Pocket</h1>
         <p class="destText">
           Mie boasts exceptional seafood thanks to its ocean-side location and
           is also home to one of the three best types of Japanese beef.

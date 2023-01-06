@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ["id", "img", "imgArray", "name", "description"],
+  props: ["id", "img", "name", "description"],
 };
 </script>
 
@@ -26,7 +26,7 @@ export default {
 }
 
 .site-branding {
-  margin: 0 30px 0 30px;
+  margin: 0 30px;
 }
 
 .site-title {
@@ -152,6 +152,15 @@ export default {
   .bestDest {
     margin-top: 40px;
     margin-bottom: 0px;
+  }
+  .destText {
+    font-size: 23px;
+  }
+  .site-branding {
+    margin: 0 5px;
+  }
+  .site-title {
+    font-size: 35px;
   }
 }
 </style>

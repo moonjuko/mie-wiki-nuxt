@@ -67,7 +67,7 @@
     display: none;
   }
   .aboutText {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   .aboutDesc {
@@ -78,7 +78,7 @@
     margin-top: 160%;
   }
   .aboutTitle {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 </style>

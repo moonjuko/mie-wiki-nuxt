@@ -7,7 +7,7 @@
       <h3>三重県</h3>
       <h1>Mie-Ken</h1>
       <p class="homeDesc">
-        Immerse in the japanese culture and learn about what the locals values.
+        Immerse in the Mie Prefecture culture and learn about the local values.
       </p>
       <a class="homeBtn" href="/dest">Discover</a>
     </div>
@@ -94,6 +94,9 @@ body {
   .wrapper {
     width: 100%;
   }
+  .homeDesc {
+    margin: 10px;
+  }
   .logo {
     float: none;
     width: 20%;
@@ -113,11 +116,11 @@ body {
   }
 
   .welcome-text h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .welcome-text h3 {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 </style>

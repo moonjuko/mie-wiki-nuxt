@@ -86,13 +86,13 @@ body {
   }
   .link {
     text-align: center;
-    font-size: 12px;
-    margin: 20px;
+    font-size: 16px;
+    margin: 20px 13px;
   }
   .logo {
     text-align: center;
-    font-size: 18px;
-    padding: 30px 20px 32px 20px;
+    font-size: 22px;
+    padding: 32px 20px 32px 20px;
   }
 }
 </style>
