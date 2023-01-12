@@ -3,11 +3,12 @@
 import cards from "../../assets/cards.json";
 
 const route = useRoute();
-const id = route.params.id;
+const id = route.params.id; //gives id of the route back
 
 const detailCard = getCardById(id);
 
 function getCardById(idToFind) {
+  //could this be a v-if ?
   if (idToFind > cards.length) return;
   let card = cards.find((x) => x.id == idToFind);
   return card;
@@ -26,7 +27,6 @@ function formatText() {
           <div class="blue-column">
             <h1 class="detailTitle">{{ detailCard.name }}</h1>
             <p class="detailText" v-html="formatText()"></p>
-            <!-- <p class="detailText">{{ detailCard.longDescription }}</p> -->
           </div>
         </div>
         <div class="column">
