@@ -5,7 +5,7 @@
       <h1 class="aboutText">
         I'm a Front-End Developer and Designer from Mie-ken, Japan.
       </h1>
-      <a class="button" href="#">See my work</a>
+      <a class="button" href="https://jujuhideko.com">See my work</a>
     </div>
     <div class="imgView">
       <img class="aboutImg" src="~/assets/img/about.jpg" alt="Card Image" />
