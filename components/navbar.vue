@@ -91,7 +91,7 @@ body {
   .link {
     text-align: center;
     font-size: 16px;
-    margin: 20px 13px;
+    margin: 20px 20px;
   }
   .logo {
     text-align: center;

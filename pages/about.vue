@@ -7,9 +7,6 @@
       </h1>
       <a class="button" href="https://jujuhideko.com">See my work</a>
     </div>
-    <div class="imgView">
-      <img class="aboutImg" src="~/assets/img/about.jpg" alt="Card Image" />
-    </div>
   </div>
 </template>
 <style>
@@ -36,25 +33,12 @@
 .aboutDesc {
   padding: 60px;
   margin: auto;
-  width: 50%;
   color: black;
   line-height: 30px;
   justify-content: center;
   text-align: left;
 }
 
-.imgView {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.aboutImg {
-  height: 600px;
-  margin-top: 70px;
-  margin-right: -100px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .Parent {
