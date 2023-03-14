@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="logo">MIE-KEN</div>
+    <NuxtLink to="/" class="logo">MIE-KEN</NuxtLink>
     <div class="menu">
       <NuxtLink class="link" to="/">
         <div class="title">Home</div>
@@ -43,6 +43,10 @@ body {
   font-size: 32px;
   font-weight: 300;
   padding: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
   border-right: 1px solid black;
 }
 
