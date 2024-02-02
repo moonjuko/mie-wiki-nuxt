@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="card">
     <div class="image">
-      <img :src="'/images/' + img" />
+      <img :src="'/images/' + img" alt="Destination Image" />
     </div>
     <div class="content">
       <h3 class="cardTitle">{{ name }}</h3>
@@ -18,46 +18,42 @@ export default {
 </template>
 
 <style>
-/* Style the card container */
-
 .centered {
-  margin: 20px 0 0px 0;
-  padding: 5px 50px;
-}
-
-.site-branding {
-  margin: 0 30px;
-}
-
-.site-title {
-  font-size: 50px;
-  padding-bottom: 10px;
+  padding: 0 50px;
 }
 
 .bestDest {
-  margin-top: 30px;
-  margin-bottom: -40px;
-  font-size: 20px;
+  font-size: 25px;
+  padding: 40px 0 20px 0;
 }
+
 .destText {
-  max-width: 1000px;
-  color: #555;
   font-size: 20px;
 }
+
+.site-title {
+  font-size: 45px;
+  margin-top: 40px;
+}
+
 .cards {
-  margin: 0 20px 0 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  max-height: 600px;
-  margin: auto;
-  text-align: center;
+  max-width: 320px;
+  height: fit-content;
+  text-align: left;
   transition: 0.3s;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
-
-/* Style the image container */
 .image {
   width: 100%;
   height: 200px;
@@ -66,101 +62,129 @@ export default {
   position: relative;
 }
 
-/* Style the image */
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.3s;
 }
-
-/* Style the card content */
 .content {
-  padding: 10px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; /* Center the text */
+  height: 100%;
 }
-
-/* Style the card title */
 .cardTitle {
   color: rgb(0, 0, 0);
-  font-size: 20px;
-  padding: 6px;
+  font-size: 23px;
   text-align: left;
 }
 
-/* Style the card description */
 .description {
   color: black;
   font-size: 18px;
-  padding: 6px;
   margin-bottom: 15px;
   text-align: left;
 }
 
-/* Style the card button */
 .button {
   border: 1px solid rgb(0, 0, 0);
   padding: 10px 25px;
   text-decoration: none;
   font-size: 15px;
-  margin: 10px 0 20px 0;
+  margin-top: auto; /* Align button to the bottom */
   display: inline-block;
   color: rgb(0, 0, 0);
   font-weight: 900;
   background-color: white;
 }
-
-/* Style the hover state of the card */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Style the hover state of the image */
 .image:hover img {
   transform: scale(1.1);
 }
 
-/* Style the hover state of the button */
 .button:hover {
   background: #e6ecfe;
   color: black;
 }
 
-/* Flexbox stuff */
+/* Media queries for smaller screens */
+@media all and (max-width: 1600px) {
+  .centered {
+    padding: 0 25px;
+  }
 
-@media screen and (min-width: 40em) {
+  .destText {
+    font-size: 15px;
+  }
+  .bestDest {
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+  }
+
+  .site-title {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
   .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 230px;
+    max-height: fit-content;
+    text-align: left;
+    transition: 0.3s;
+  }
+  .image {
+    width: 100%;
+    height: 150px;
+    background-color: #555;
+    overflow: hidden;
+    position: relative;
   }
 
-  .card {
-    flex: 0 1 calc(50% - 1em);
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
   }
-}
+  .cardTitle {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+    text-align: left;
+  }
 
-@media screen and (min-width: 60em) {
-  .card {
-    flex: 0 1 calc(25% - 1em);
-    margin-top: 30px;
+  .description {
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
   }
-}
-@media all and (max-width: 600px) {
-  .site-title {
-    font-size: 30px;
-  }
-  .bestDest {
-    margin-top: 40px;
-    margin-bottom: 0px;
-  }
-  .destText {
-    font-size: 23px;
-  }
-  .site-branding {
-    margin: 0 5px;
-  }
-  .site-title {
-    font-size: 35px;
+
+  .button {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    background-color: white;
   }
 }
 </style>

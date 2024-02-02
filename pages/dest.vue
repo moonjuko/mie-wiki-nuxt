@@ -13,9 +13,7 @@ import cards from "../assets/cards.json";
           <br />And then there’s its natural beauty, with dense ancient forests
           that meet cascading waterfalls.
         </p>
-        <h3 style="margin-top: 50px" class="bestDest">
-          The Best Places to Visit
-        </h3>
+        <h3 class="bestDest">The Best Places to Visit</h3>
       </div>
       <!-- .site-title -->
     </div>
