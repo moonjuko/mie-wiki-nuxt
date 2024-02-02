@@ -25,6 +25,7 @@ body {
   font-family: "Dosis";
   font-weight: 300;
   color: black;
+  background-color: #f2f3f7;
 }
 
 .header {

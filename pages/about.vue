@@ -2,7 +2,7 @@
   <div class="Parent">
     <div class="aboutDesc">
       <p class="aboutTitle">Hello, my name is Juliana Matsumura.</p>
-      <h1 class="aboutText">
+      <h1 style="font-size: 25px; padding: 60px 0" class="aboutText">
         I'm a Front-End Developer and Designer from Mie-ken, Japan.
       </h1>
       <a class="button" href="https://jujuhideko.com">See my work</a>
@@ -20,14 +20,14 @@
 }
 
 .aboutTitle {
-  margin-bottom: 25px;
+  margin-top: 45px;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 50px;
 }
 
 .aboutText {
   font-style: italic;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 
 .aboutDesc {

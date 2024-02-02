@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.13.0",
+    "font-awesome": "^4.7.0"
   }
 }

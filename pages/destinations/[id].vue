@@ -25,43 +25,54 @@ function formatText() {
       <div class="row">
         <div class="column">
           <div class="blue-column">
-            <h1 class="detailTitle">{{ detailCard.name }}</h1>
-            <p class="detailText" v-html="formatText()"></p>
+            <h1
+              style="font-size: 30px; text-align: left; font-weight: 800"
+              class="detailTitle"
+            >
+              {{ detailCard.name }}
+            </h1>
+            <p
+              style="font-size: 20px; text-align: left"
+              class="detailText"
+              v-html="formatText()"
+            ></p>
+            <div class="table-wrapper" style="padding: 100px 0">
+              <table style="width: 100%; text-align: left; height: 100%">
+                <tr>
+                  <th>Overall Rating</th>
+                  <th>Category</th>
+                  <th>Opening Times</th>
+                  <th>Location</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>{{ detailCard.rating }}</td>
+                    <td>{{ detailCard.Category }}</td>
+                    <td>{{ detailCard.openingTime }}</td>
+                    <td>{{ detailCard.mapsLink }}</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star" color="black"></i></td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                    <td><i class="fa-solid fa-clock"></i></td>
+                    <td><i class="fa-regular fa-map"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="green-column">
-            <div class="slider">
-              <span id="slide-1"></span>
-              <span id="slide-2"></span>
-              <span id="slide-3"></span>
-              <div class="image-container">
-                <img
-                  :src="'/images/' + detailCard.img1"
-                  class="slide"
-                  width="660"
-                  height="460"
-                />
-                <img
-                  :src="'/images/' + detailCard.img2"
-                  class="slide"
-                  width="660"
-                  height="460"
-                />
-                <img
-                  :src="'/images/' + detailCard.img3"
-                  class="slide"
-                  8
-                  width="660"
-                  height="460"
-                />
-              </div>
-              <div class="buttons">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-              </div>
-            </div>
+            <UCarousel
+              v-slot="{ item }"
+              :items="[detailCard.img1, detailCard.img2, detailCard.img3]"
+              :ui="{ item: 'basis-full' }"
+              class="rounded-lg overflow-hidden"
+              arrows
+            >
+              <img :src="`/images/${item}`" class="w-full" draggable="false" />
+            </UCarousel>
           </div>
         </div>
       </div>
@@ -72,6 +83,7 @@ function formatText() {
 <style>
 .detailTitle {
   margin-bottom: 20px;
+  font-size: 60px;
 }
 
 .detailText {
@@ -104,15 +116,6 @@ function formatText() {
   }
 }
 
-.slider {
-  width: 660px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  text-align: center;
-  overflow: hidden;
-}
 .image-container {
   width: 1980px;
   background-color: pink;
@@ -125,21 +128,7 @@ function formatText() {
   transition: left 2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.slide {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-}
-#slide-1:target ~ .image-container {
-  left: 0px;
-}
-#slide-2:target ~ .image-container {
-  left: -660px;
-}
-#slide-3:target ~ .image-container {
-  left: -1320px;
-}
+
 .buttons {
   top: 50px;
 }
@@ -171,27 +160,6 @@ function formatText() {
   }
   .green-column {
     margin-bottom: 0px;
-  }
-  .slider {
-    width: 300px;
-    height: 300px;
-  }
-  .slide {
-    width: 300px;
-    height: 200px;
-  }
-  #slide-1:target ~ .image-container {
-    left: 0px;
-  }
-  #slide-2:target ~ .image-container {
-    left: -300px;
-  }
-  #slide-3:target ~ .image-container {
-    left: -600px;
-  }
-  .image-container {
-    width: 900px;
-    height: 200px;
   }
 }
 </style>
