@@ -25,19 +25,12 @@ function formatText() {
       <div class="row">
         <div class="column">
           <div class="blue-column">
-            <h1
-              style="font-size: 30px; text-align: left; font-weight: 800"
-              class="detailTitle"
-            >
+            <h class="detailTitle">
               {{ detailCard.name }}
-            </h1>
-            <p
-              style="font-size: 20px; text-align: left"
-              class="detailText"
-              v-html="formatText()"
-            ></p>
-            <div class="table-wrapper" style="padding: 100px 0">
-              <table style="width: 100%; text-align: left; height: 100%">
+            </h>
+            <p class="detailText" v-html="formatText()"></p>
+            <div class="table-wrapper">
+              <table>
                 <tr>
                   <th>Overall Rating</th>
                   <th>Category</th>
@@ -87,8 +80,9 @@ function formatText() {
 }
 
 .detailText {
-  font-size: 20px;
+  font-size: 23px;
 }
+
 .some-page-wrapper {
   margin: 60px;
 }
@@ -96,70 +90,103 @@ function formatText() {
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Updated: Set flex-wrap to nowrap */
   width: 100%;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-basis: 50%; /* Updated: Set flex-basis to 50% for both columns */
 }
 
 .blue-column {
   margin-right: 60px;
 }
 
-@media screen and (min-width: 800px) {
-  .column {
-    flex: 1;
+.green-column {
+  margin-right: 60px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  gap: 10px;
+  margin-top: 80px;
+}
+th {
+  font-size: 18px;
+}
+tr {
+  font-size: 18px;
+}
+
+@media all and (max-width: 1600px) {
+  table {
+    width: 100%;
+    text-align: left;
+    height: 100%;
+    gap: 10px;
+    margin-top: 30px;
   }
-}
+  th {
+    font-size: 12px;
+  }
+  tr {
+    font-size: 12px;
+  }
+  .detailTitle {
+    margin-bottom: 10px;
+    font-size: 14.5px;
+  }
 
-.image-container {
-  width: 1980px;
-  background-color: pink;
-  height: 460px;
-  clear: both;
-  position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-  transition: left 2s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+  .detailText {
+    font-size: 14px;
+  }
 
-.buttons {
-  top: 50px;
-}
-.buttons a {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50px;
-  margin: 20px 5px;
-  background-color: #abb6d6;
-}
+  .some-page-wrapper {
+    margin: 50px;
+  }
 
-.buttons a:hover {
-  background-color: black;
+  .row {
+    /* No change in the row styles for this breakpoint */
+  }
+
+  .column {
+    flex-basis: 100%; /* Change back to full width for stacking on smaller screens */
+  }
+
+  .blue-column,
+  .green-column {
+    margin-right: 50px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .detailTitle {
     margin-top: 20px;
   }
+
   .detailText {
-    font-size: 18px;
+    font-size: 13px;
   }
+
   .some-page-wrapper {
     margin: 10px 50px;
   }
-  .blue-column {
-    margin-right: 0px;
+
+  .row {
+    /* No change in the row styles for this breakpoint */
   }
+
+  .column {
+    flex-basis: 100%; /* Change back to full width for stacking on smaller screens */
+  }
+
+  .blue-column,
   .green-column {
-    margin-bottom: 0px;
+    margin-right: 0px;
   }
 }
 </style>
