@@ -29,11 +29,12 @@ export default {
 
 .destText {
   font-size: 20px;
+  padding: 10px 0 20px 0;
 }
 
 .site-title {
   font-size: 45px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .cards {
@@ -120,16 +121,17 @@ export default {
   }
 
   .destText {
+    padding: 2px 0 15px 0;
     font-size: 15px;
   }
   .bestDest {
     font-size: 16px;
-    padding: 20px 0 10px 0;
+    padding: 0 0 10px 0;
   }
 
   .site-title {
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .cards {
@@ -164,8 +166,9 @@ export default {
   .cardTitle {
     color: rgb(0, 0, 0);
     font-size: 17px;
-    padding: 10px;
+    padding: 0 10px;
     text-align: left;
+    font-weight: 600;
   }
 
   .description {

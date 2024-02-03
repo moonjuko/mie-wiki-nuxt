@@ -25,9 +25,9 @@ function formatText() {
       <div class="row">
         <div class="column">
           <div class="blue-column">
-            <h class="detailTitle">
+            <h1 class="detailTitle">
               {{ detailCard.name }}
-            </h>
+            </h1>
             <p class="detailText" v-html="formatText()"></p>
             <div class="table-wrapper">
               <table>
@@ -76,7 +76,8 @@ function formatText() {
 <style>
 .detailTitle {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .detailText {
